@@ -7,8 +7,8 @@ pipeline {
   triggers {
     pollSCM ('H/3 * * * *')
   }
-  options {
-    disableCocurrentBuilds()
+ options {
+    disableConcurrentBuilds()
   }
   stages {
     stage ('Validate configuration resources') {
